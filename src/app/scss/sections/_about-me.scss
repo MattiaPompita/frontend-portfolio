@@ -1,3 +1,8 @@
 .about-me {
-    height: 100vh;
+  height: 100vh;
+
+  &__container {
+    border: 1px solid red;
+    height: 300px;
+  }
 }

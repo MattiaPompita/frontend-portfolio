@@ -1,15 +1,17 @@
-import anime from 'animejs/lib/anime.es.js';
+import anime from "animejs/lib/anime.es.js";
 
 export class HeroAnim {
   heroTextAnim = (icontTl) => {
-    const helloMsg = document.querySelector(
+    const helloMsg = document.querySelectorAll(
       ".hero-section__main__presentation__helloMsg"
     );
-
-    helloMsg.innerHTML = helloMsg.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
+      
+    helloMsg.forEach((el) => {
+      el.innerHTML = el.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+    });
 
     return anime
       .timeline()
