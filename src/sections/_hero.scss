@@ -1,0 +1,44 @@
+@use "../custom" as *;
+
+.hero-section {
+  height: 100vh;
+
+  &__main {
+    height: 94%;
+
+    &__presentation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &__helloMsg {
+        letter-spacing: 0.5rem;
+      }
+
+      .letter {
+        display: inline-block;
+        line-height: 1rem;
+      }
+
+      h1,
+      p,
+      i {
+        flex: 0 1 100%;
+      }
+
+      &__p {
+        color: $gray-100;
+        font-weight: 300;
+      }
+
+      &__icon {
+        opacity: 0;
+        .fa-circle-down {
+          color: $gray-100;
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
