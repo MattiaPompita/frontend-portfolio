@@ -1,13 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
 
 module.exports = {
-  mode: "development",
   entry: "./src/index.js",
-  output: {
-    filename: "main.[hash].js",
-    path: path.resolve(__dirname, "dist"),
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
@@ -23,6 +17,14 @@ module.exports = {
           "sass-loader",
           "import-glob-loader",
         ],
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(svg|png|jpg|gif)$/,
+        type: "asset/resource"
       },
     ],
   },
