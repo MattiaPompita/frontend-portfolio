@@ -1,9 +1,9 @@
-@import "./custom";
-@import "./resets";
+@import "./app/scss/custom";
+@import "./app/scss//resets";
 
-@import "./components/animations";
-@import "./components/typography";
+@import "./app/scss//components/animations";
+@import "./app/scss//components/typography";
 
-@import "./sections/about-me";
-@import "./sections/hero";
-@import "./sections/navbar";
+@import "./app/scss//sections/about-me";
+@import "./app/scss//sections/hero";
+@import "./app/scss//sections/navbar";
