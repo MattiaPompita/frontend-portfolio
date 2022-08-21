@@ -2,26 +2,14 @@ import anime from "animejs/lib/anime.es.js";
 
 export class HeroAnim {
   heroTextAnim = (icontTl) => {
-    const helloMsg = document.querySelectorAll(
-      ".hero-section__main__presentation__helloMsg"
-    );
-      
-    helloMsg.forEach((el) => {
-      el.innerHTML = el.textContent.replace(
-        /\S/g,
-        "<span class='letter'>$&</span>"
-      );
-    });
-
     return anime
       .timeline()
       .add({
-        targets: ".hero-section__main__presentation__helloMsg .letter",
-        translateY: [100, 0],
+        targets: [".hero-section__main__presentation__helloMsg"],
+        translateY: [200, 0],
         opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 2000,
-        delay: (el, i) => 300 + 30 * i,
+        easing: "easeOutSine",
+        duration: 1000,
       })
       .add(
         {
@@ -30,16 +18,15 @@ export class HeroAnim {
             ".navbar-brand",
             ".navbar__container__link",
           ],
-          delay: anime.stagger(100),
-          translateY: [200, 0],
+          delay: anime.stagger(200),
+          translateY: [100, 0],
           opacity: [0, 1],
-          easing: "easeOutExpo",
-          duration: 1400,
+          easing: "easeOutSine",
+          duration: 1000,
           begin: function () {
             icontTl.play();
           },
         },
-        "-=1400"
       );
   };
 
