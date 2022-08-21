@@ -1,10 +1,9 @@
 @use "../custom" as *;
 
 .hero-section {
-  height: 100vh;
+  height: 90vh;
 
   &__main {
-
     &__presentation {
       &__helloMsg {
         letter-spacing: 0.5rem;
@@ -15,7 +14,6 @@
         line-height: 1rem;
       }
 
-
       &__p {
         color: $gray-100;
         font-weight: 300;
@@ -24,7 +22,7 @@
       &__icon {
         opacity: 0;
         .fa-circle-down {
-          color: $gray-100;
+          color: $accent;
           width: 32px;
           height: 32px;
         }

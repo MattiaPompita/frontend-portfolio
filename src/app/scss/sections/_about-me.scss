@@ -2,7 +2,16 @@
   height: 100vh;
 
   &__container {
-    border: 1px solid red;
-    height: 300px;
+    &__title {
+      position: relative;
+      &__line {
+        height: 15px;
+        background-color: $accent;
+        width: 0;
+        position: absolute;
+        bottom: -32px;
+        left: 5%;
+      }
+    }
   }
 }

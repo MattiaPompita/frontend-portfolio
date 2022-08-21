@@ -1,58 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@400;500;600;700&display=swap");
+@import "./mixins";
 
 $primaryFont: "Syne";
 $secondaryFont: "Inter";
 
+.display-xl {
+  @include heading($primaryFont, 700, 11.75rem, 11.375rem);
+  @include stroke($gray-800, 2px);
+  text-transform: uppercase;
+  color: $black;
+}
+
 .h-xl {
-  font-family: $primaryFont, sans-serif;
-  font-weight: 700;
-  font-size: 4.25em;
-  line-height: 4.5rem;
-  /*margin-top: 1.5rem;
-  margin-bottom: 3rem;*/
+  @include heading($primaryFont, 700, 4.25em, 4.5rem);
 }
 
 .h-lg {
-  font-family: $primaryFont, sans-serif;
-  font-weight: 600;
-  font-size: 2.625rem;
-  line-height: 3rem;
-  /*margin-top: 1.5rem;
-  margin-bottom: 1.5rem;*/
+  @include heading($primaryFont, 600, 2.625rem, 3rem);
 }
 
 .h-md {
-  font-family: $primaryFont, sans-serif;
-  font-weight: 500;
-  font-size: 1.625rem;
-  line-height: 3rem;
-  /*margin-top: 1.5rem;
-  margin-bottom: 0;*/
+  @include heading($primaryFont, 500, 1.625rem, 3rem);
 }
 
 .h-sm {
-  font-family: $primaryFont, sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  /*margin-top: 1.5rem;
-  margin-bottom: 0rem;*/
+  @include heading($primaryFont, 400, 1rem, 1.5rem);
 }
 
 .paragraph {
-  font-family: $secondaryFont, sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  /*margin-top: 0rem;
-  margin-bottom: 1.5rem;*/
+  @include heading($secondaryFont, 400, 1rem, 1.5rem);
 }
 
 .paragraph-sm {
-  font-family: $secondaryFont, sans-serif;
-  font-weight: 300;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
-  /*margin-top: 0rem;
-  margin-bottom: 1.3125rem;*/
+  @include heading($secondaryFont, 300, 0.875rem, 1.3125rem);
 }

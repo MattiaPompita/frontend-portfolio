@@ -8,3 +8,14 @@
 @import "./app/scss/sections/about-me";
 @import "./app/scss/sections/hero";
 @import "./app/scss/sections/navbar";
+@import "./app/scss/sections/_skil";
+
+body {
+  background-color: $black;
+}
+
+// main {
+//   scroll-snap-type: y proximity;
+//   overflow-y: scroll;
+//   height: 100vh;
+// }
