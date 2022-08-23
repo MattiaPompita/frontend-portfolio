@@ -1,6 +1,7 @@
 require("waypoints/lib/noframework.waypoints.min");
 
 const aboutMeContainer = document.querySelector(".about-me");
+const contextWrapper = document.querySelector(".wrapper");
 
 export const run = (Navbar, Hero, AboutMe) => {
   Navbar.renderAnim();
@@ -9,9 +10,9 @@ export const run = (Navbar, Hero, AboutMe) => {
   var waypoint = new Waypoint({
     element: aboutMeContainer,
     handler: function () {
-      console.log(this);
-      AboutMe.aboutMeTitle.play();
+      AboutMe.aboutMeTitle(Waypoint.viewportHeight());
       waypoint.disable();
     },
+    context: contextWrapper,
   });
 };

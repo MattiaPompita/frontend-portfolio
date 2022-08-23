@@ -12,9 +12,14 @@ $info: $accent;
 $light: $white;
 $dark: $black;
 
+body {
+  background-color: $black;
+}
 
 main {
-    background-color: $black;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 //IMPORT BOOTSTRAP 5

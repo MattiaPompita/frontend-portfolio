@@ -4,6 +4,15 @@
 $primaryFont: "Syne";
 $secondaryFont: "Inter";
 
+.display-xxl {
+  @include heading($primaryFont, 700, 18.00rem, 18rem);
+  @include stroke($gray-800, 2px);
+  opacity: 0.5;
+  text-transform: uppercase;
+  color: $black;
+  width: 200%;
+}
+
 .display-xl {
   @include heading($primaryFont, 700, 11.75rem, 11.375rem);
   @include stroke($gray-800, 2px);

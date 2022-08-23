@@ -1,6 +1,7 @@
 @use "../custom" as *;
 
 .navbar {
+  height: 10vh;
   &__container {
 
     &__link,
