@@ -1,36 +1,17 @@
 @use "../custom" as *;
 
-.viewport {
+.hero {
   height: 100vh;
-  scroll-snap-align: start;
-}
 
-.hero-section {
-  height: 90vh;
+  &__container {
+    width: 100%;
+    margin-bottom: 96px;
 
-  &__main {
-    &__presentation {
-      &__helloMsg {
-        letter-spacing: 0.5rem;
-      }
-
-      .letter {
-        display: inline-block;
-        line-height: 1rem;
-      }
-
-      &__p {
-        color: $gray-100;
-        font-weight: 300;
-      }
-
-      &__icon {
-        opacity: 0;
-        .fa-circle-down {
-          color: $accent;
-          width: 32px;
-          height: 32px;
-        }
+    &__info-text {
+      margin-top: 96px;
+      .paragraph {
+        font-size: 1.625rem !important;
+        line-height: 3rem !important;
       }
     }
   }

@@ -1,19 +1,7 @@
 @include media-breakpoint-down(lg) {
-  .navbar {
-    &__container {
-      margin: auto !important;
-    }
-    .hello-wrapper {
-      font-size: 12px;
-    }
-  }
+
 }
 
 @include media-breakpoint-down(sm) {
-  .hero-section {
-    .hello-wrapper {
-      font-size: 0.75rem;
-      line-height: 1rem;
-    }
-  }
+
 }

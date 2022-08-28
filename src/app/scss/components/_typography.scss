@@ -1,16 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Syne:wght@400;500;600;700&display=swap");
 @import "./mixins";
 
 $primaryFont: "Syne";
 $secondaryFont: "Inter";
 
 .display-xxl {
-  @include heading($primaryFont, 700, 18.00rem, 18rem);
-  @include stroke($gray-800, 2px);
-  opacity: 0.5;
-  text-transform: uppercase;
-  color: $black;
-  width: 200%;
+  @include heading($primaryFont, 700, 18rem, 18rem);
+  color: $primary;
 }
 
 .display-xl {
@@ -37,7 +33,8 @@ $secondaryFont: "Inter";
 }
 
 .paragraph {
-  @include heading($secondaryFont, 400, 1rem, 1.5rem);
+  @include heading($secondaryFont, 200, 1rem, 1.5rem);
+  color: $gray-100;
 }
 
 .paragraph-sm {
