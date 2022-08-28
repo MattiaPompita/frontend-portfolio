@@ -1,1 +1,19 @@
+.about-me {
+  height: 200vh;
+  //   scroll-snap-align: start;
+  &__container {
+    &__text {
+      line-height: 6rem;
+      color: $primary;
+      overflow: hidden;
+      display: block;
+      font-weight: 400;
 
+      &__span {
+        display: block;
+        transform: translate3d(0px, 0%, 0);
+        opacity: 0;
+      }
+    }
+  }
+}

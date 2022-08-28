@@ -17,7 +17,7 @@ $secondaryFont: "Inter";
 }
 
 .h-xl {
-  @include heading($primaryFont, 700, 4.25em, 4.5rem);
+  @include heading($secondaryFont, 700, 4.25em, 4.5rem);
 }
 
 .h-lg {

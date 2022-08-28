@@ -2,16 +2,38 @@
 
 .hero {
   height: 100vh;
-
+  // scroll-snap-align: start;
   &__container {
     width: 100%;
     margin-bottom: 96px;
 
+    &__title {
+      &__row {
+        overflow: hidden;
+        display: block;
+
+        &__span {
+          display: block;
+          transform: translate3d(0px, 0%, 0);
+          opacity: 0;
+        }
+      }
+    }
+
     &__info-text {
       margin-top: 96px;
+      overflow: hidden;
       .paragraph {
         font-size: 1.625rem !important;
         line-height: 3rem !important;
+        display: block;
+        overflow: hidden;
+
+        .paragraph__span {
+          display: block;
+          transform: translate3d(0px, 0%, 0);
+          opacity: 0;
+        }
       }
     }
   }
